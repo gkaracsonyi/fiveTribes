@@ -1,7 +1,19 @@
 import React from 'react'
-import Home from './Home.jsx'
-import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './views/Home.jsx'
+import Commercials from './views/Commercials.jsx'
+import Livestreaming from './views/Livestreaming.jsx'
+import Events from './views/Events.jsx'
+import Education from './views/Education.jsx'
+import Athletics from './views/Athletics.jsx'
+import Nonprofit from './views/Nonprofit.jsx'
+import Films from './views/Films.jsx'
+import About from './views/About.jsx'
+import SJL from './views/SJL.jsx'
+import Contact from './views/Contact.jsx'
+
+import './index.css'
 
 const root = createRoot(document.getElementById('root'));
 
@@ -19,6 +31,7 @@ root.render(
                 <Route path='films' element={<Films />} />
                 <Route path='about' element={<About />} />
                 <Route path='sjl' element={<SJL />} />
+                <Route path='contact' element={<Contact />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
