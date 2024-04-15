@@ -1,3 +1,10 @@
+/* ==================================================
+File: home.css
+Authors: @gkaracsonyi, @JustinGetty
+Purpose: Styling for home page of FTCP website
+Updated: April 2024
+================================================== */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
