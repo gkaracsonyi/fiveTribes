@@ -1,20 +1,20 @@
-import React from 'react'
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './views/Home.jsx'
-import Commercials from './views/Commercials.jsx'
-import Livestreaming from './views/Livestreaming.jsx'
-import Events from './views/Events.jsx'
-import Education from './views/Education.jsx'
-import Athletics from './views/Athletics.jsx'
-import Nonprofit from './views/Nonprofit.jsx'
-import Films from './views/Films.jsx'
-import About from './views/About.jsx'
-import SJL from './views/SJL.jsx'
-import Contact from './views/Contact.jsx'
+import Home from './views/Home.jsx';
+import Commercials from './views/Commercials.jsx';
+import Livestreaming from './views/Livestreaming.jsx';
+import Events from './views/Events.jsx';
+import Education from './views/Education.jsx';
+import Athletics from './views/Athletics.jsx';
+import Nonprofit from './views/Nonprofit.jsx';
+import Films from './views/Films.jsx';
+import About from './views/About.jsx';
+import SJL from './views/SJL.jsx';
+import Contact from './views/Contact.jsx';
 
-import './index.css'
+import './index.css';
 
 const root = createRoot(document.getElementById('root'));
 
