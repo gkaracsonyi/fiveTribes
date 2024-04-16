@@ -7,6 +7,8 @@
 
 import { Helmet } from 'react-helmet';
 
+import Header from '../elements/Header';
+
 import './home.css';
 
 const Home = () => {
@@ -18,6 +20,7 @@ const Home = () => {
             <Helmet>
                 <title>Five Tribes Cinema Productions</title>
             </Helmet>
+            <Header />
         </>
     );
 };
