@@ -7,6 +7,8 @@
 
 import { Helmet } from 'react-helmet';
 
+import Header from '../elements/Header.jsx';
+
 import './events.css';
 
 const Events = () => {
@@ -18,6 +20,7 @@ const Events = () => {
             <Helmet>
                 <title>Events</title>
             </Helmet>
+            <Header />
         </>
     );
 };

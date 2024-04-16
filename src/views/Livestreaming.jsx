@@ -7,6 +7,8 @@
 
 import { Helmet } from "react-helmet";
 
+import Header from '../elements/Header.jsx';
+
 import './livestreaming.css';
 
 const Livestreaming = () => {
@@ -18,7 +20,7 @@ const Livestreaming = () => {
             <Helmet>
                 <title>Livestreaming</title>
             </Helmet>
-        
+            <Header />
         </>
     );
 };

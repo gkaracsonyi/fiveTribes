@@ -7,6 +7,8 @@
 
 import { Helmet } from "react-helmet";
 
+import Header from '../elements/Header.jsx';
+
 import './contact.css';
 
 const Contact = () => {
@@ -18,6 +20,7 @@ const Contact = () => {
             <Helmet>
                 <title>Contact</title>
             </Helmet>
+            <Header />
         </>
     );
 };

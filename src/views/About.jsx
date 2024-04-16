@@ -7,6 +7,8 @@
 
 import { Helmet } from "react-helmet";
 
+import Header from '../elements/Header.jsx';
+
 const About = () => {
 
 
@@ -16,7 +18,7 @@ const About = () => {
             <Helmet>
                 <title>About Us</title>
             </Helmet>
-        
+            <Header />
         </>
     );
 };

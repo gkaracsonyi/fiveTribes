@@ -7,6 +7,8 @@
 
 import { Helmet } from "react-helmet";
 
+import Header from '../elements/Header.jsx';
+
 import './nonprofit.css';
 
 const Nonprofit = () => {
@@ -18,7 +20,7 @@ const Nonprofit = () => {
             <Helmet>
                 <title>Nonprofit Events</title>
             </Helmet>
-        
+            <Header />
         </>
     );
 };

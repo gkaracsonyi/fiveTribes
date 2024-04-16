@@ -7,6 +7,8 @@
 
 import { Helmet } from "react-helmet";
 
+import Header from '../elements/Header.jsx';
+
 import './sjl.css';
 
 const SJL = () => {
@@ -18,7 +20,7 @@ const SJL = () => {
             <Helmet>
                 <title>SJL Racing</title>
             </Helmet>
-        
+            <Header />
         </>
     );
 };

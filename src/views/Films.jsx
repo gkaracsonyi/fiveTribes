@@ -7,6 +7,8 @@
 
 import { Helmet } from 'react-helmet';
 
+import Header from '../elements/Header.jsx';
+
 import './films.css';
 
 const Films = () => {
@@ -18,6 +20,7 @@ const Films = () => {
             <Helmet>
                 <title>Independent Films</title>
             </Helmet>
+            <Header />
         </>
     );
 };

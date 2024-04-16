@@ -7,6 +7,8 @@
 
 import { Helmet } from "react-helmet";
 
+import Header from '../elements/Header.jsx';
+
 import './athletics.css';
 
 const Athletics = () => {
@@ -18,7 +20,7 @@ const Athletics = () => {
             <Helmet>
                 <title>Athletic Events</title>
             </Helmet>
-        
+            <Header />
         </>
     );
 };
