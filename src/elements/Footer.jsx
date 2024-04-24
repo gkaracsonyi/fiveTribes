@@ -5,9 +5,11 @@
 // Updated: April 2024
 // ==================================================
 
+import './footer.css';
+
 const Footer = () => {
 
-
+    
 
     return (
         <>
