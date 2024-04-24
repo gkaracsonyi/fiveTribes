@@ -93,6 +93,10 @@ nav {
     display: flex;
 }
 
+.subNav:hover .link::after{
+    width: 100%;
+}
+
 .dropdownLink {
     background: none;
     color: #FFFFFF;
