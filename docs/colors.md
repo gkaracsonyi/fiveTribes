@@ -3,7 +3,7 @@ Below are the color pallets for the site
 
 Main Pallet
 ---
-[Main Color Pallet on Coolors.co](https://coolors.co/ffffff-000000-f50000)
+[Main Color Pallet on Coolors.co](https://coolors.co/ffffff-000000-b80000)
 
 Main pallete will consist of only SELECTABLE SHADES (for uniformity) of these three colors.
 
