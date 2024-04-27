@@ -11,6 +11,8 @@ import Header from '../elements/Header';
 
 import './home.css';
 
+import downArrow from '../assets/expand-down.svg';
+
 const Home = () => {
 
 
@@ -21,6 +23,12 @@ const Home = () => {
                 <title>Five Tribes Cinema Productions</title>
             </Helmet>
             <Header />
+            <div className="heroContainer">
+                <video src="https://geekay.one/media-assets/site-banner.mov" autoPlay loop muted preload='true'></video>
+                <div class="svg-container">
+                    <img src={downArrow} class="expand-down-img" />
+                </div>
+            </div>
         </>
     );
 };
