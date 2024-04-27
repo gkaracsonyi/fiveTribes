@@ -9,6 +9,8 @@ import { useNavigate } from 'react-router-dom';
 
 import './header.css';
 
+import ftLogo from '/ft-logo.png';
+
 const Header = () => {
 
     const navigate = useNavigate();
@@ -20,7 +22,9 @@ const Header = () => {
     return (
         <>
             <header>
-                <p className='ftcpLogo'>5 TRIBES LOGO</p>
+                <button className='logoContainer' onClick={() => goTo('')}>
+                    <img className='logo' src={ftLogo} alt="Five Tribes Cinema Productions Logo" />
+                </button>
                 <nav>
                     <div className='pageLinks'>
                         <button className='link' onClick={() => goTo('commercials')}>Commercials</button>
