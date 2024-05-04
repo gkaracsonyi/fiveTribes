@@ -5,6 +5,8 @@ Purpose: Styling for home page of FTCP website
 Updated: April 2024
 ================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 .heroContainer {
     height: 100vh;
     width: 100vw;
@@ -53,4 +55,130 @@ Updated: April 2024
     animation: tidal 2.5s;
     animation-iteration-count: infinite;
     filter: drop-shadow(0px 0px 4px rgb(0 0 0 / 0.3));
+}
+
+.heading {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+}
+
+.awardWinning {
+    color: white;
+    width: 50%;
+    font-family: "Oswald", sans-serif;
+    padding: 50px;
+    z-index: 2;
+    transform: translate(10%, 0px);
+    margin-right: 40px;
+}
+
+.awardWinning h3 {
+    font-weight: 300;
+    letter-spacing: .1em;
+    margin: 0;
+    transform: translate(2px, 12px);
+    color: #FFFFFF;
+}
+
+.awardWinning h1 {
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0;
+    height: 65px;
+}
+
+.awardWinning p {
+    color: #CCCCCC;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sectionMedia {
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sectionMedia img {
+    width: 100%;
+    float: right;
+}
+
+.sectionMedia--gradient {
+    position: absolute;
+    z-index: 3;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marqueeContainer {
+    margin: 100px auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    user-select: none;
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marqueeAnimation 25s linear infinite;
+}
+
+.marqueeLogo {
+    filter: brightness(0) invert(1);
+    width: auto;
+    height: 60px;
+    margin-right: 75px;
+    /* Adjust as needed */
+}
+
+.marqueeLogoSpecial {
+    filter: invert(1);
+    width: auto;
+    height: 60px;
+    margin-right: 100px;
+    /* Adjust as needed */
+}
+
+.marqueeGradient{
+    width: 150px;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+}
+
+.mgLeft {
+    background-image: linear-gradient(to right, rgba(0, 0 , 0, 1), rgba(0, 0, 0, 0));
+}
+
+.mgRight {
+    background-image: linear-gradient(to left, rgba(0, 0 , 0, 1), rgba(0, 0, 0, 0));
+    right: 0;
 }
