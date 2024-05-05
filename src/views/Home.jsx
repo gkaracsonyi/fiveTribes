@@ -6,8 +6,10 @@
 // ==================================================
 
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 import Header from '../elements/Header';
+import Footer from '../elements/Footer';
 
 import './home.css';
 
@@ -25,7 +27,11 @@ import bannerVideo from '../assets/sizzle-reel-chopped.mov';
 
 const Home = () => {
 
+    const navigate = useNavigate();
 
+    const goTo = (dest) => {
+        navigate(`/${dest}`);
+    };
 
     return (
         <>
@@ -40,12 +46,14 @@ const Home = () => {
                 <div className='svg-container'>
                     <img src={downArrow} className='expand-down-img' alt='scroll down arrow' />
                 </div>
+                <span className='heroGradient'></span>
             </div>
             <div className='section'>
                 <div className='awardWinning'>
                     <h3>AWARD WINNING</h3>
                     <h1>CINEMA PRODUCTION</h1>
                     <p>The Five Tribes production team is an independent video production company based in the Greater Philadelphia and South Jersey area. We produce a variety of work, ranging from commercials to our own narrative film projects. Let us make something beautiful for you.</p>
+                    <button className='awardWinning--button' onClick={() => goTo('contact')}>CONTACT</button>
                 </div>
                 <div className='sectionMedia'>
                         <img src="https://i2.wp.com/blog.rememberlenny.com/wp-content/uploads/2020/10/7lAmICy.jpg?fit=1886%2C1258&ssl=1" alt="cinema production using unreal engine" />
@@ -76,6 +84,7 @@ const Home = () => {
                 </div>
                 <span className='marqueeGradient mgRight'></span>
             </div>
+            <Footer />
         </>
     );
 };
