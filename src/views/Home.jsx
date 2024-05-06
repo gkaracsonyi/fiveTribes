@@ -42,7 +42,8 @@ const Home = () => {
             <Header />
             <div className='heroContainer'>
                 {/* <video src='https://geekay.one/media-assets/site-banner.mov' autoPlay loop muted preload='true'></video> */}
-                <video src={bannerVideo} autoPlay loop muted preload='true'></video>
+                {/* <video src={bannerVideo} autoPlay loop muted preload='true'></video> */}
+                <video src='https://geekay.one/files/sizzle-reel-chopped.mov' autoPlay loop muted preload='true'/>
                 <div className='svg-container'>
                     <img src={downArrow} className='expand-down-img' alt='scroll down arrow' />
                 </div>
