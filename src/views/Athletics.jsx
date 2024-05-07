@@ -21,6 +21,10 @@ const Athletics = () => {
                 <title>Athletic Events</title>
             </Helmet>
             <Header />
+
+            <div className = "penis">
+                <h1>Penis haha</h1>
+            </div>
         </>
     );
 };
