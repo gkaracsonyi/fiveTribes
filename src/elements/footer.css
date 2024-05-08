@@ -85,3 +85,12 @@ footer {
     height: 100%;
     filter: invert(1);
 }
+
+.littleEasterEgg{
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    padding-bottom: 1%;
+    align-self:auto;
+
+}

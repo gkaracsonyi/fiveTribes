@@ -43,6 +43,18 @@ const Footer = () => {
                         <button><img src={ftLogo} alt="test logo" /></button>
                         <button><img src={ftLogo} alt="test logo" /></button>
                     </div>
+                    <div className="littleEasterEgg">
+
+                        <button onClick={console.log("This site was made by Justin Getty and George Karasconyi")}></button>
+                    </div>
+
+                    <div className='contactUs'>
+
+                        <p>Conttact us via our contact page *PUT CONTACT BUTTON HEREEEEEEE or reach out to us!
+                            Shoot Us An Email: info@fivetribescinemaproductions.com
+                            Or Give Us A Call: (267) 888-7206 GEORGE PLS FIX!</p>
+
+                    </div>
                 </div>
             </footer>
         </>
