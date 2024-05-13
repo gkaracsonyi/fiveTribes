@@ -68,11 +68,11 @@ Updated: April 2024
     flex: 0.4;
 }
 
-.heroContainer:has(.filmContainer:hover) .filmContainer:not(:hover) img {
+.filmHeroContainer:has(.filmContainer:hover) .filmContainer:not(:hover) img {
     filter: grayscale(1) brightness(0.75);
 }
 
-.heroContainer:has(.filmContainer:hover) .filmContainer:not(:hover) .textContainer {
+.filmHeroContainer:has(.filmContainer:hover) .filmContainer:not(:hover) .textContainer {
     transform: translateY(-25%);
 }
 
