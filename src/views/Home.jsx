@@ -2,7 +2,7 @@
 // File: Home.jsx
 // Authors: @gkaracsonyi, @JustinGetty
 // Purpose: Home page for FTCP website
-// Updated: April 2024
+// Updated: May 2024
 // ==================================================
 
 import { Helmet } from 'react-helmet';
@@ -13,17 +13,20 @@ import Footer from '../elements/Footer';
 
 import './home.css';
 
-import downArrow from '../assets/expand-down.svg';
-import pennLogo from '../assets/uPennLogoBlack.png';
-import aramarkLogo from '../assets/aramarkLogoBlack.png';
-import drexelLogo from '../assets/drexelLogoBlack.png';
-import espnLogo from '../assets/espnLogoBlack.png';
-import hfhLogo from '../assets/habitatForHumanityLogoBlack.png';
-import jeffersonLogo from '../assets/jeffersonLogoBlack.png';
-import nbcSportsLogo from '../assets/nbcSportsLogoBlack.png';
-import usRowingLogo from '../assets/usRowingLogoBlack.png';
+// IMPORTS FOR LOCAL MEDIA ASSETS
 
-import bannerVideo from '../assets/sizzle-reel-chopped.mov';
+import downArrow from '../assets/expand-down.svg'; // Down arrow at the bottom of the home page hero
+import pennLogo from '../assets/uPennLogoBlack.png'; // UPenn Logo - Client Carousel
+import aramarkLogo from '../assets/aramarkLogoBlack.png'; // Aramark Logo - Client Carousel
+import drexelLogo from '../assets/drexelLogoBlack.png'; // Drexel University Logo - Client Carousel
+import espnLogo from '../assets/espnLogoBlack.png'; // ESPN Logo - Client Carousel
+import hfhLogo from '../assets/habitatForHumanityLogoBlack.png'; // Habitat for Humanity Logo - Client Carousel
+import jeffersonLogo from '../assets/jeffersonLogoBlack.png'; // Jefferson Health Logo - Client Carousel
+import nbcSportsLogo from '../assets/nbcSportsLogoBlack.png'; // NBC Sports Logo - Client Carousel
+import usRowingLogo from '../assets/usRowingLogoBlack.png'; // US Rowing Logo - Client Carousel
+
+// LINKS TO REMOTE MEDIA
+const bannerVideo = 'https://cdn.geekay.one/five-tribes-cinema-productions/sizzle-reel-chopped.mov'; // Home page hero background video (NO LARGER THAN 100MB!!!)
 
 const Home = () => {
 
@@ -41,9 +44,7 @@ const Home = () => {
             </Helmet>
             <Header />
             <div className='heroContainer'>
-                {/* <video src='https://geekay.one/media-assets/site-banner.mov' autoPlay loop muted preload='true'></video> */}
-                {/* <video src={bannerVideo} autoPlay loop muted preload='true'></video> */}
-                <video src='https://geekay.one/files/sizzle-reel-chopped.mov' autoPlay loop muted preload='true'/>
+                <video src={bannerVideo} autoPlay loop muted preload='true'></video>
                 <div className='svg-container'>
                     <img src={downArrow} className='expand-down-img' alt='scroll down arrow' />
                 </div>
@@ -64,6 +65,7 @@ const Home = () => {
             <div className="marqueeContainer">
                 <span className='marqueeGradient mgLeft'></span>
                 <div className="marquee">
+                    {/* Section 1 */}
                     <img className="marqueeLogoSpecial" src={pennLogo} alt="penn logo" />
                     <img className="marqueeLogo" src={aramarkLogo} alt="aramark logo" />
                     <img className="marqueeLogo" src={drexelLogo} alt="drexel logo" />
@@ -73,7 +75,7 @@ const Home = () => {
                     <img className="marqueeLogoSpecial" src={nbcSportsLogo} alt="nbc sports logo" />
                     <img className="marqueeLogo" src={usRowingLogo} alt="us rowing logo" />
 
-                    {/* Duplicate content for infinite scrolling --> */}
+                    {/* Section 2 - Duplicate content for infinite scrolling */}
                     <img className="marqueeLogoSpecial" src={pennLogo} alt="penn logo" />
                     <img className="marqueeLogo" src={aramarkLogo} alt="aramark logo" />
                     <img className="marqueeLogo" src={drexelLogo} alt="drexel logo" />
@@ -82,6 +84,11 @@ const Home = () => {
                     <img className="marqueeLogo" src={jeffersonLogo} alt="jefferson logo" />
                     <img className="marqueeLogoSpecial" src={nbcSportsLogo} alt="nbc sports logo" />
                     <img className="marqueeLogo" src={usRowingLogo} alt="us rowing logo" />
+
+                    {/* To add a client logo to the carousel, import the logo as shown above, and add
+                    the new logo TWICE (one per section). Make sure that the logo you are importing is
+                    white with a transparent background. This can be achieved using a png and increasing
+                    the brighness of the image until everything is white. */}
                 </div>
                 <span className='marqueeGradient mgRight'></span>
             </div>
