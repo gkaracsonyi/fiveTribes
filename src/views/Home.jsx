@@ -14,7 +14,6 @@ import Footer from '../elements/Footer';
 import './home.css';
 
 // IMPORTS FOR LOCAL MEDIA ASSETS
-
 import downArrow from '../assets/expand-down.svg'; // Down arrow at the bottom of the home page hero
 import pennLogo from '../assets/uPennLogoBlack.png'; // UPenn Logo - Client Carousel
 import aramarkLogo from '../assets/aramarkLogoBlack.png'; // Aramark Logo - Client Carousel
@@ -25,8 +24,15 @@ import jeffersonLogo from '../assets/jeffersonLogoBlack.png'; // Jefferson Healt
 import nbcSportsLogo from '../assets/nbcSportsLogoBlack.png'; // NBC Sports Logo - Client Carousel
 import usRowingLogo from '../assets/usRowingLogoBlack.png'; // US Rowing Logo - Client Carousel
 
-// LINKS TO REMOTE MEDIA
+// VARIABLE TEXT AND REMOTE MEDIA
+// Meta tags (for SEO and bots)
+const pageDescription = "Five Tribes is an award winning cinema prodcution team in greater Philadelphia."
+
+// Page hero
 const bannerVideo = 'https://cdn.geekay.one/five-tribes-cinema-productions/sizzle-reel-chopped.mov'; // Home page hero background video (NO LARGER THAN 100MB!!!)
+
+// Section 1 (Award Winning)
+const awardWinning_description = "The Five Tribes production team is an independent video production company based in the Greater Philadelphia and South Jersey area. We produce a variety of work, ranging from commercials to our own narrative film projects. Let us make something beautiful for you."
 
 const Home = () => {
 
@@ -40,7 +46,7 @@ const Home = () => {
         <>
             <Helmet>
                 <title>Five Tribes Cinema Productions</title>
-                <meta name='description' content='Award winning cinema prodcution team in greater Philadelphia.' />
+                <meta name='description' content={pageDescription} />
             </Helmet>
             <Header />
             <div className='heroContainer'>
@@ -54,7 +60,7 @@ const Home = () => {
                 <div className='awardWinning'>
                     <h3>AWARD WINNING</h3>
                     <h1>CINEMA PRODUCTION</h1>
-                    <p>The Five Tribes production team is an independent video production company based in the Greater Philadelphia and South Jersey area. We produce a variety of work, ranging from commercials to our own narrative film projects. Let us make something beautiful for you.</p>
+                    <p>{awardWinning_description}</p>
                     <button className='awardWinning--button' onClick={() => goTo('contact')}>CONTACT</button>
                 </div>
                 <div className='sectionMedia'>
