@@ -11,7 +11,6 @@ Updated: April 2024
     display: flex;
     height: 100vh;
     position: relative;
-    background-color: gray;
 }
 
 .filmContainer {
@@ -20,6 +19,10 @@ Updated: April 2024
     transition: all 0.3s ease;
     overflow: hidden;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(5px);
 }
 
 .filmContainer img {
@@ -148,4 +151,18 @@ Updated: April 2024
     opacity: 1;
     visibility: visible;
     transition-delay: 0.4s;
+}
+
+/* BACKGROUNDS */
+
+.filmContainer1 {
+    background-image: url(https://cdn.geekay.one/five-tribes-cinema-productions/midsommar-lowRes.jpeg);
+}
+
+.filmContainer2 {
+    background-image: url(https://cdn.geekay.one/five-tribes-cinema-productions/hereditary-lowRes.jpeg);
+}
+
+.filmContainer3 {
+    background-image: url(https://cdn.geekay.one/five-tribes-cinema-productions/parasite-lowRes.jpeg);
 }
