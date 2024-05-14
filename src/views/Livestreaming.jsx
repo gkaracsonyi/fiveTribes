@@ -11,6 +11,8 @@ import Header from '../elements/Header.jsx';
 
 import './livestreaming.css';
 
+const pageDescription = "Five Tribes Cinema Productions provides live production support, trusted by NBC Sports, US Rowing, and the Dad Vail Regatta."
+
 const Livestreaming = () => {
 
 
@@ -19,6 +21,7 @@ const Livestreaming = () => {
         <>
             <Helmet>
                 <title>Livestreaming</title>
+                <meta name='description' content={pageDescription} />
             </Helmet>
             <Header />
         </>
