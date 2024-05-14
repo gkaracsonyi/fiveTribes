@@ -19,17 +19,14 @@ const pageDescription = "Films independently produced by Five Tribes Cinema Prod
 const film1_name = 'MIDSOMMAR';
 const film1_description = "A couple travel to Sweden to visit their friend's rural hometown for its fabled midsummer festival, but what begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.";
 const film1_backgroundImage = 'https://cdn.geekay.one/five-tribes-cinema-productions/midsommar.jpeg';
-const film1_alt = film1_name + ' movie banner';
 
 const film2_name = 'HEREDITARY';
 const film2_description = "When the matriarch of the Graham family passes away, her daughter and grandchildren begin to unravel cryptic and increasingly terrifying secrets about their ancestry, trying to outrun the sinister fate they have inherited.";
 const film2_backgroundImage = 'https://cdn.geekay.one/five-tribes-cinema-productions/hereditary.png';
-const film2_alt = film2_name + ' movie banner';
 
 const film3_name = 'PARASITE';
 const film3_description = "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.";
 const film3_backgroundImage = 'https://cdn.geekay.one/five-tribes-cinema-productions/parasite.jpg';
-const film3_alt = film3_name + ' movie banner';
 
 
 const Films = () => {
@@ -45,7 +42,7 @@ const Films = () => {
             <Header />
             <div className='filmHeroContainer'>
                 <div className='filmContainer filmContainer1'>
-                    <img src={film1_backgroundImage} alt={film1_alt} />
+                    <img src={film1_backgroundImage} alt={film1_name + ' movie banner'} />
                     <div className='overlay'>
                         <div className='overlay--heading'>
                             <h1>{film1_name}</h1>
@@ -62,7 +59,7 @@ const Films = () => {
                     </div>
                 </div>
                 <div className='filmContainer filmContainer2'>
-                    <img src={film2_backgroundImage} alt={film2_alt} />
+                    <img src={film2_backgroundImage} alt={film2_name + ' movie banner'} />
                     <div className='overlay'>
                         <div className='overlay--heading'>
                             <h1>{film2_name}</h1>
@@ -79,7 +76,7 @@ const Films = () => {
                     </div>
                 </div>
                 <div className='filmContainer filmContainer3'>
-                    <img src={film3_backgroundImage} alt={film3_alt} />
+                    <img src={film3_backgroundImage} alt={film3_name + ' movie banner'} />
                     <div className='overlay'>
                         <div className='overlay--heading'>
                             <h1>{film3_name}</h1>
