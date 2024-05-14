@@ -11,6 +11,11 @@ import Header from '../elements/Header.jsx';
 
 import './films.css';
 
+// VARIABLE TEXT AND REMOTE MEDIA
+// Meta tags (for SEO and bots)
+const pageDescription = "Films independently produced by Five Tribes Cinema Productions.";
+
+// Page Hero (variable names are pretty self explanatory)
 const film1_name = 'MIDSOMMAR';
 const film1_description = "A couple travel to Sweden to visit their friend's rural hometown for its fabled midsummer festival, but what begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.";
 const film1_backgroundImage = 'https://cdn.geekay.one/five-tribes-cinema-productions/midsommar.jpeg';
@@ -26,6 +31,7 @@ const film3_description = "Greed and class discrimination threaten the newly for
 const film3_backgroundImage = 'https://cdn.geekay.one/five-tribes-cinema-productions/parasite.jpg';
 const film3_alt = film3_name + ' movie banner';
 
+
 const Films = () => {
 
 
@@ -34,10 +40,11 @@ const Films = () => {
         <>
             <Helmet>
                 <title>Independent Films</title>
+                <meta name='description' content={pageDescription} />
             </Helmet>
             <Header />
             <div className='filmHeroContainer'>
-                <div className='filmContainer container1'>
+                <div className='filmContainer filmContainer1'>
                     <img src={film1_backgroundImage} alt={film1_alt} />
                     <div className='overlay'>
                         <div className='overlay--heading'>
@@ -54,7 +61,7 @@ const Films = () => {
                         <h1>{film1_name}</h1>
                     </div>
                 </div>
-                <div className='filmContainer container2'>
+                <div className='filmContainer filmContainer2'>
                     <img src={film2_backgroundImage} alt={film2_alt} />
                     <div className='overlay'>
                         <div className='overlay--heading'>
@@ -71,7 +78,7 @@ const Films = () => {
                         <h1>{film2_name}</h1>
                     </div>
                 </div>
-                <div className='filmContainer container3'>
+                <div className='filmContainer filmContainer3'>
                     <img src={film3_backgroundImage} alt={film3_alt} />
                     <div className='overlay'>
                         <div className='overlay--heading'>
