@@ -1,0 +1,190 @@
+
+---Downloaded files---
+The import files for: Import Film Maker Demo were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://fivetribescinemaproductions.com
+Data file = /home1/fivetri1/public_html/wp-content/themes/filmmaker/filmmakerdemo-content/demo-content.xml
+Widget file = not defined!
+Customizer file = not defined!
+
+------
+Completed AJAX call number: 1
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+
+
+------
+Completed AJAX call number: 2
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+[ERROR] Failed to import "mysql" (Media)
+
+
+------
+Completed AJAX call number: 3
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+[ERROR] Failed to import "mysql" (Media)
+
+
+------
+Completed AJAX call number: 4
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+[ERROR] Failed to import "mysql" (Media)
+
+
+------
+Completed AJAX call number: 5
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+[ERROR] Failed to import "mysql" (Media)
+
+
+------
+Completed AJAX call number: 6
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+[ERROR] Failed to import "mysql" (Media)
+
+
+------
+Completed AJAX call number: 7
+[ERROR] Failed to import "map" (Media)
+[ERROR] Failed to import "beauty-1" (Media)
+[ERROR] Failed to import "beauty-2" (Media)
+[ERROR] Failed to import "girl-624223_1280" (Media)
+[ERROR] Failed to import "ecommerce" (Media)
+[ERROR] Failed to import "featured_icon1" (Media)
+[ERROR] Failed to import "men-700087_640" (Media)
+[ERROR] Failed to import "human-771601_1280" (Media)
+[ERROR] Failed to import "wordpress" (Media)
+[ERROR] Failed to import "branding" (Media)
+[ERROR] Failed to import "web-design" (Media)
+[ERROR] Failed to import "globe-960267_640" (Media)
+[ERROR] Failed to import "map-945237_640" (Media)
+[ERROR] Failed to import "entrepreneur-593358_1280" (Media)
+[ERROR] Failed to import "about-banner" (Media)
+[ERROR] Failed to import "a2" (Media)
+[ERROR] Failed to import "about-3" (Media)
+[ERROR] Failed to import "services" (Media)
+[ERROR] Failed to import "services-area" (Media)
+[ERROR] Failed to import "bgslide3" (Media)
+[ERROR] Failed to import "jquery" (Media)
+[ERROR] Failed to import "mysql" (Media)
+
