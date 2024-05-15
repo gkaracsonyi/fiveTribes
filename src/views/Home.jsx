@@ -56,6 +56,25 @@ const Home = () => {
                 </div>
                 <span className='heroGradient'></span>
             </div>
+
+            <div className='bannerOne'>
+                <img src='src/assets/2019 + misc/womanDeadliftingOne.png'></img>
+                <h1>COMMERCIAL ADVERTISING</h1>
+                <h3>PRODUCTIONS</h3>
+            </div>
+
+            <div className='bannerTwo'>
+                <img src='src/assets/2019 + misc/IMG_2761-1-scaled.jpg'></img>
+                <h1>PROMOTIONAL</h1>
+                <h3>Video Shoots</h3>
+            </div>
+
+            <div className='bannerThree'>
+                <img src='src/assets/2019 + misc/Kerwin-Haze.png'></img>
+                <h1>AWARD WINNING</h1>
+                <h3>Narrative Films</h3>
+            </div>
+
             <div className='section'>
                 <div className='awardWinning'>
                     <h3>AWARD WINNING</h3>
