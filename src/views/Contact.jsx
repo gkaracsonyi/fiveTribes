@@ -10,6 +10,8 @@ import Header from '../elements/Header.jsx';
 import './contact.css';
 import Footer from '../elements/Footer';
 
+
+/*Note: use this as background, add opacity to the page; src/assets/2021/Screen-Shot-2021-01-03-at-9.16.20-AM-1.png*/
 const Contact = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();

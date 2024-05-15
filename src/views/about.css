@@ -1,0 +1,93 @@
+/* Ensure the root element and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for the main content */
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+}
+
+/* Base container for the slider, ensuring central alignment and interaction */
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 40vh; /* Adjust the height to fit the carousel */
+    background: url('src/assets/2021/Group Photo (1).jpg') no-repeat center center;
+    background-size: cover; /* Ensures the background covers the entire area */
+    padding: 40px 0; /* Adds vertical padding */
+}
+
+/* Style for the team members' container */
+.teamContainer {
+    display: flex;
+    width: 80%; /* Adjust width to ensure it fills the screen */
+    overflow: hidden; /* Prevents overflowing content from being visible */
+    justify-content: center; /* Centers the content horizontally */
+    padding: 0 5%; /* Optional padding can be adjusted or removed */
+}
+
+/* Individual team member styling */
+.teamMember {
+    flex: 0 0 30%; /* Slightly less than one-third to account for margins/padding */
+    margin: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+/* Styling for images to handle aspect ratio and positioning */
+.memberImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Navigation buttons styling */
+.slideButton {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons are above other elements */
+}
+
+/* Adjusting button positioning for better visibility */
+.slideButton.left {
+    left: 20px;
+}
+
+.slideButton.right {
+    right: 20px;
+}
+
+@media (max-width: 800px) {
+    .teamMember {
+        flex: 0 0 100%; /* Each member takes full width on smaller screens */
+    }
+
+    .teamContainer {
+        width: 100%; /* Ensure container fills screen width on smaller devices */
+    }
+}
