@@ -41,7 +41,8 @@ const Header = () => {
                         </div>
                         <button className='link' onClick={() => goTo('films')}>Films</button>
                         <button className='link' onClick={() => goTo('about')}>About Us</button>
-                        <button className='specialLink' onClick={() => goTo('sjl')}>SJL Racing</button>
+                        <button className='link' onClick={() => goTo('sjl')}>SJL Racing</button>
+                        <button className='specialLink' onClick={() => goTo('contact')}>Contact Us</button>
                     </div>
                 </nav>
             </header>
