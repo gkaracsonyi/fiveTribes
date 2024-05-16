@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet';
 import { useEffect, useState, useRef } from 'react';
 
 import Header from '../elements/Header.jsx';
+import Footer from '../elements/Footer.jsx';
 
 import './films.css';
 
@@ -182,6 +183,7 @@ const Films = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
