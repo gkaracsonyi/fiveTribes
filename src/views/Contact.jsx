@@ -38,7 +38,8 @@ const Contact = () => {
                 <title>Contact Us</title>
             </Helmet>
             <Header />
-            <div className="contact-wrapper">
+
+                <div className="contact-wrapper">
                 <div className="contact-container">
                     <h1>Contact Us</h1>
                     <p>We'd love to hear from you! Please send us a message via the form below, and we'll get back to you as soon as possible.</p>
