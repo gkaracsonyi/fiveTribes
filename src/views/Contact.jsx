@@ -27,9 +27,9 @@ const Contact = () => {
                 'Content-Type': 'application/x-www-form-urlencoded', // Important for PHP to correctly parse the POST data
             },
         })
-        .then(response => response.text())
-        .then(data => alert(data))
-        .catch(error => console.error('Error:', error));
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error('Error:', error));
     };
 
     return (
@@ -38,12 +38,12 @@ const Contact = () => {
                 <title>Contact Us</title>
             </Helmet>
             <Header />
-
-                <div className="contact-wrapper">
+            <div className="contactBackground"></div> {/* change sizing */}
+            <div className="contact-wrapper">
                 <div className="contact-container">
                     <h1>Contact Us</h1>
                     <p>We'd love to hear from you! Please send us a message via the form below, and we'll get back to you as soon as possible.</p>
-                    
+
                     <form className="contact-form" onSubmit={handleSubmit}>
                         <div className="inline-group">
                             <div className="form-group">

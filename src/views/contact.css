@@ -1,3 +1,4 @@
+/*
 body {
     background: url('src/assets/2021/Screen-Shot-2021-01-03-at-9.16.20-AM-1.png') no-repeat center center fixed;
     background-size: cover;
@@ -5,6 +6,20 @@ body {
     padding: 0;
     height: 100vh;
     overflow: auto;
+}
+
+*/
+
+.contactBackground {
+    background: url('src/assets/2021/Screen-Shot-2021-01-03-at-9.16.20-AM-1.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 130vh;
+    width: 100vw;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
 }
 
 /* Ensure the contact form is centered and on top */
@@ -15,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    margin: 100px auto;
 }
 
 .contact-container {
