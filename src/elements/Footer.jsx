@@ -53,6 +53,7 @@ const Footer = () => {
                         <p>Conttact us via our contact page *PUT CONTACT BUTTON HEREEEEEEE or reach out to us!
                             Shoot Us An Email: info@fivetribescinemaproductions.com
                             Or Give Us A Call: (267) 888-7206 GEORGE PLS FIX!</p>
+                        <h1>MAKE THESE BUTTONS THE SOCIAL LINKS YOU BAHRAINIAN SLUTTTTT</h1>
 
                     </div>
                 </div>
