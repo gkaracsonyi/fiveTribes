@@ -56,7 +56,7 @@ const Home = () => {
                 </div>
                 <span className='heroGradient'></span>
             </div>
-
+            {/*
             <div className='bannerOne'>
                 <img src='src/assets/2019 + misc/womanDeadliftingOne.png'></img>
                 <h1>COMMERCIAL ADVERTISING</h1>
@@ -74,7 +74,7 @@ const Home = () => {
                 <h1>AWARD WINNING</h1>
                 <h3>Narrative Films</h3>
             </div>
-
+            */}
             <div className='section'>
                 <div className='awardWinning'>
                     <h3>AWARD WINNING</h3>
