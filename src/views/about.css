@@ -1,4 +1,3 @@
-/* Ensure the root element and body take up the full height */
 html, body {
     height: 100%;
     margin: 0;
@@ -9,60 +8,77 @@ body {
     flex-direction: column;
 }
 
-/* Container for the main content */
 .mainContent {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom */
+    justify-content: flex-end;
 }
 
-/* Base container for the slider, ensuring central alignment and interaction */
 .sliderContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
+}
+
+.mainImageContainer {
     width: 100%;
-    height: 100vh; /* Adjust the height to fit the carousel */
+    height: 100vh;
     background: url('src/assets/2021/Group Photo (1).jpg') no-repeat center center;
-    background-size: cover; /* Ensures the background covers the entire area */
+    background-size: cover;
+    position: relative;
 }
 
-/* Style for the team members' container */
-.teamContainer {
-    display: flex;
-    width: 80%; /* Adjust width to ensure it fills the screen */
-    overflow: hidden; /* Prevents overflowing content from being visible */
-    justify-content: center; /* Centers the content horizontally */
-    padding: 0 5%; /* Optional padding can be adjusted or removed */
-}
-
-/* Individual team member styling */
-.teamMember {
-    flex: 0 0 30%; /* Slightly less than one-third to account for margins/padding */
-    margin: 10px;
+.overlayText {
+    position: absolute;
+    color: white;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    margin: 10vh auto;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 15;
+    font-size: 50px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Styling for images to handle aspect ratio and positioning */
-.memberImage {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    align-items: center;
+.overlayButton {
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    background-color: rgba(230, 230, 230, 0.3); 
+    font-weight: bold;
+    font-size: 24px;
+    padding: 18px 60px;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
     border-radius: 5px;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+    font-family: 'Oswald';
+    letter-spacing: .07em;
+    font-weight: 550;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Navigation buttons styling */
+.overlayButton:hover {
+    background-color: #B80000;
+    border-color: #B80000;
+    color: white;
+}
+
+.carouselContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .slideButton {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    background: rgba(0, 0, 0, 0.5);
     border: none;
     font-size: 2rem;
     color: #fff;
@@ -70,10 +86,9 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10; /* Ensure buttons are above other elements */
+    z-index: 10;
 }
 
-/* Adjusting button positioning for better visibility */
 .slideButton.left {
     left: 20px;
 }
@@ -82,12 +97,44 @@ body {
     right: 20px;
 }
 
+.teamContainer {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.teamMember {
+    flex: 0 0 30%;
+    margin: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.teamMember.hidden {
+    display: none;
+}
+
+.memberImage {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 @media (max-width: 800px) {
     .teamMember {
-        flex: 0 0 100%; /* Each member takes full width on smaller screens */
+        flex: 0 0 100%;
     }
 
     .teamContainer {
-        width: 100%; /* Ensure container fills screen width on smaller devices */
+        width: 100%;
     }
 }

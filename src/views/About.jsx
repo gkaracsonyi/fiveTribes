@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import React, { useState } from 'react'; 
 import Header from '../elements/Header.jsx';
 import './about.css'
+import Footer from '../elements/Footer';
 
 const teamMembers = [
     {
@@ -48,23 +49,25 @@ const teamMembers = [
         image: "src/assets/2021/Paul-Giordano.jpg"
     }
 ];
-
+/*ADD LITTLE SCROLL ARROW POINTING DOWN SAYING MEET THE TEAM OR SUM SHIT */
 const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const visibleMembers = 3; // Adjust this if needed
+    const displayCount = 3; // Number of visible members
 
     const next = () => {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % (teamMembers.length - visibleMembers + 1));
+        setCurrentIndex(prevIndex => (prevIndex + 1) % teamMembers.length);
     };
 
     const prev = () => {
-        setCurrentIndex(prevIndex => {
-            if (prevIndex === 0) {
-                return teamMembers.length - visibleMembers;
-            } else {
-                return prevIndex - 1;
-            }
-        });
+        setCurrentIndex(prevIndex => (prevIndex - 1 + teamMembers.length) % teamMembers.length);
+    };
+
+    const getVisibleMembers = () => {
+        let visibleMembers = [];
+        for (let i = 0; i < displayCount; i++) {
+            visibleMembers.push(teamMembers[(currentIndex + i) % teamMembers.length]);
+        }
+        return visibleMembers;
     };
 
     return (
@@ -75,22 +78,31 @@ const About = () => {
             <Header />
             <div className="mainContent">
                 <div className="sliderContainer">
-                    <button onClick={prev} className="slideButton left">‹</button>
-                    <div className="teamContainer">
-                        {teamMembers.slice(currentIndex, currentIndex + visibleMembers).map((member, index) => (
-                            <div key={index} className="teamMember">
-                                <img src={member.image} alt={member.name} className="memberImage" />
-                                <div className="memberInfo">
-                                    <h2>{member.name}</h2>
-                                    <p>{member.role}</p>
-                                    <p>{member.description}</p>
-                                </div>
-                            </div>
-                        ))}
+                    <div className="mainImageContainer">
+                        <div className="overlayText">
+                            <p>A dedicated group ready to bring your vision to life.</p>
+                            <button className="overlayButton">GET IN CONTACT</button>
+                        </div>
                     </div>
-                    <button onClick={next} className="slideButton right">›</button>
+                    <div className="carouselContainer">
+                        <button onClick={prev} className="slideButton left">‹</button>
+                        <div className="teamContainer">
+                            {getVisibleMembers().map((member, index) => (
+                                <div key={index} className="teamMember">
+                                    <img src={member.image} alt={member.name} className="memberImage" />
+                                    <div className="memberInfo">
+                                        <h2>{member.name}</h2>
+                                        <p>{member.role}</p>
+                                        <p>{member.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <button onClick={next} className="slideButton right">›</button>
+                    </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
