@@ -6,6 +6,7 @@
 // ==================================================
 
 import { Helmet } from 'react-helmet';
+import { useEffect, useState, useRef } from 'react';
 
 import Header from '../elements/Header.jsx';
 
@@ -31,7 +32,48 @@ const film3_backgroundImage = 'https://cdn.geekay.one/five-tribes-cinema-product
 
 const Films = () => {
 
+    const [films, setFilms] = useState([]);
+    const [selectedFilm, setSelectedFilm] = useState(null);
+    const overlayRef = useRef(null);
 
+    useEffect(() => {
+        // Fetch film gallery from the database
+        const fetchFilms = async () => {
+            const url = "https://pg.geekay.one/ftcp/independent_films";
+            const requestBody = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            };
+
+            try {
+                const response = await fetch(url, requestBody);
+                if (response.ok) {
+                    const data = await response.json();
+                    setFilms(data);
+                    console.log("Response:", data); // FOR DEV ONLY
+                } else {
+                    console.error("Failed to fetch:", response.status, response.statusText);
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        };
+
+        fetchFilms();
+    }, []);
+
+    const formatReleaseYear = (releaseDate) => {
+        const date = new Date(releaseDate);
+        return date.getFullYear();
+    };
+
+    const handleOverlayClick = (event) => {
+        if (event.target === overlayRef.current) {
+            setSelectedFilm(null);
+        }
+    };
 
     return (
         <>
@@ -90,6 +132,53 @@ const Films = () => {
                     </div>
                     <div className='textContainer'>
                         <h1>{film3_name}</h1>
+                    </div>
+                </div>
+            </div>
+            <div className='filmMain'>
+                <div className='filmGallery'>
+                    <div className='filmGallery--heading'>
+                        <h1>GALLERY</h1>
+                    </div>
+                    <div className='filmGallery--container grid'>
+                        {films.map(film => (
+                            <div className={'flimGallery--filmContainer ' + film.film_id} key={film.film_id} onClick={() => setSelectedFilm(film)}>
+                                <img src={film.cover_image} alt={film.title} />
+                            </div>
+                        ))}
+                        {selectedFilm && (
+                            <div className="flimInfoOverlay--overlay" ref={overlayRef} onClick={handleOverlayClick}>
+                                <div className="flimInfoOverlay--overlay-content">
+                                    <span className="flimInfoOverlay--close-button" onClick={() => setSelectedFilm(null)}>
+                                        &times;
+                                    </span>
+                                    <img src={selectedFilm.cover_image} alt={selectedFilm.title} />
+                                    <div className="filmInfoOverlay--filmInfo">
+                                        <div className='filmInfoOverlay--heading'>
+                                            <h2>{selectedFilm.title}</h2>
+                                            {selectedFilm.mature_tag ? (
+                                                <p className='filmInfoOverlay--matureTag'>MATURE</p>
+                                            ) : (
+                                                ''
+                                            )}
+                                        </div>
+                                        <p>{formatReleaseYear(selectedFilm.release_date)} - {selectedFilm.runtime_minutes} min</p>
+                                        <p>{selectedFilm.description}</p>
+                                        <p>Director: {selectedFilm.director}</p>
+                                        <p>Language: {selectedFilm.language}</p>
+                                        {selectedFilm.watch_link ? (
+                                            <a href={selectedFilm.watch_link} target='_blank'>
+                                                <button className='filmInfoOverlay--watchButton'>WATCH</button>
+                                            </a>
+                                        ) : (
+                                            <button className='filmInfoOverlay--watchButtonDisabled' disabled>
+                                                WATCH
+                                            </button>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
