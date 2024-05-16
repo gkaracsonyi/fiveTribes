@@ -180,7 +180,7 @@ Updated: April 2024
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-    margin: auto 200px;
+    margin: 100px 200px 0px 200px;
 }
 
 .flimGallery--filmContainer {
