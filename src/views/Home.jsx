@@ -15,14 +15,14 @@ import './home.css';
 
 // IMPORTS FOR LOCAL MEDIA ASSETS
 import downArrow from '../assets/expand-down.svg'; // Down arrow at the bottom of the home page hero
-import pennLogo from '../assets/uPennLogoBlack.png'; // UPenn Logo - Client Carousel
-import aramarkLogo from '../assets/aramarkLogoBlack.png'; // Aramark Logo - Client Carousel
-import drexelLogo from '../assets/drexelLogoBlack.png'; // Drexel University Logo - Client Carousel
-import espnLogo from '../assets/espnLogoBlack.png'; // ESPN Logo - Client Carousel
-import hfhLogo from '../assets/habitatForHumanityLogoBlack.png'; // Habitat for Humanity Logo - Client Carousel
-import jeffersonLogo from '../assets/jeffersonLogoBlack.png'; // Jefferson Health Logo - Client Carousel
-import nbcSportsLogo from '../assets/nbcSportsLogoBlack.png'; // NBC Sports Logo - Client Carousel
-import usRowingLogo from '../assets/usRowingLogoBlack.png'; // US Rowing Logo - Client Carousel
+import pennLogo from '../assets/logos/uPennLogoBlack.png'; // UPenn Logo - Client Carousel
+import aramarkLogo from '../assets/logos/aramarkLogoBlack.png'; // Aramark Logo - Client Carousel
+import drexelLogo from '../assets/logos/drexelLogoBlack.png'; // Drexel University Logo - Client Carousel
+import espnLogo from '../assets/logos/espnLogoBlack.png'; // ESPN Logo - Client Carousel
+import hfhLogo from '../assets/logos/habitatForHumanityLogoBlack.png'; // Habitat for Humanity Logo - Client Carousel
+import jeffersonLogo from '../assets/logos/jeffersonLogoBlack.png'; // Jefferson Health Logo - Client Carousel
+import nbcSportsLogo from '../assets/logos/nbcSportsLogoBlack.png'; // NBC Sports Logo - Client Carousel
+import usRowingLogo from '../assets/logos/usRowingLogoBlack.png'; // US Rowing Logo - Client Carousel
 
 // VARIABLE TEXT AND REMOTE MEDIA
 // Meta tags (for SEO and bots)
