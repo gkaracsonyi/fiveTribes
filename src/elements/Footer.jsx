@@ -10,6 +10,10 @@ import { useNavigate } from 'react-router-dom';
 import './footer.css';
 
 import ftLogo from '/ft-logo.png';
+import vimeoLogo from '../assets/logos/vimeo-logo.svg';
+import youtubeLogo from '../assets/logos/youtube-icon.webp';
+import facebookLogo from '../assets/logos/facebookLogo.svg';
+import instagramLogo from '../assets/logos/instagramLogo.svg';
 
 const Footer = () => {
 
@@ -43,10 +47,10 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className='footerSocialLinks'>
-                            <button><img src={ftLogo} alt="test logo" /></button>
-                            <button><img src={ftLogo} alt="test logo" /></button>
-                            <button><img src={ftLogo} alt="test logo" /></button>
-                            <button><img src={ftLogo} alt="test logo" /></button>
+                            <a href="https://vimeo.com/user75373618" target='_blank'><img src={vimeoLogo} alt="test logo" /></a>
+                            <a href="https://www.youtube.com/channel/UC88pgZsUSQwmHEhMnVzZ62A" target='_blank'><img src={youtubeLogo} alt="test logo" /></a>
+                            <a href="https://www.facebook.com/fivetribesproductions/" target='_blank'><img src={facebookLogo} alt="test logo" /></a>
+                            <a href="https://www.instagram.com/fivetribesproductions"><img src={instagramLogo} alt="test logo" /></a>
                         </div>
                     </div>
                 </div>

@@ -70,22 +70,28 @@ footer {
     float: right;
     margin-left: auto;
     display: flex;
-    align-items: center;
+    filter: invert(1);
 }
 
-.footerSocialLinks button {
-    width: 40px;
-    height: 40px;
+.footerSocialLinks a {
+    width: 25px;
+    height: 25px;
     padding: 0;
     border-style: none;
     background: none;
-    margin-left: 8px;
+    margin-left: 20px;
     cursor: pointer;
+    align-self: last baseline;
 }
 
-.footerSocialLinks button > img {
+.footerSocialLinks a > img {
     width: 100%;
     height: 100%;
+    transition: all ease-in-out .15s;
+}
+
+.footerSocialLinks a > img:hover {
+    transform: scale(1.08);
 }
 
 .littleEasterEgg{
