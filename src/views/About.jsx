@@ -12,6 +12,8 @@ import Header from '../elements/Header.jsx';
 import './about.css'
 import Footer from '../elements/Footer';
 
+import downArrow from '../assets/expand-down.svg';
+
 const teamMembers = [
     {
         name: "Colin Stewart",
@@ -38,7 +40,7 @@ const teamMembers = [
         image: "src/assets/2021/Greg-Fischer.jpg"
     },
     {
-        name: "Chayse McLaughlin",  
+        name: "Chayse McLaughlin",
         role: "Camera Operator and Sound Mixer",
         description: "Chayse graduated from Drexel University with a degree in film and video and has worked on various projects including gripping and sound mixing.",
         image: "src/assets/2021/Chayse-McLaughlin.jpg"
@@ -50,10 +52,9 @@ const teamMembers = [
         image: "src/assets/2021/Paul-Giordano.jpg"
     }
 ];
-/*ADD LITTLE SCROLL ARROW POINTING DOWN SAYING MEET THE TEAM OR SUM SHIT 
-also add 'meet the team 1.mp4'
 
-*/
+// also add 'meet the team 1.mp4'
+
 const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const displayCount = 3; // Number of visible members
@@ -87,29 +88,32 @@ const About = () => {
             </Helmet>
             <Header />
             <div className="mainContent">
-                <div className="sliderContainer">
-                    <div className="mainImageContainer">
-                        <div className="overlayText">
-                            <p>A dedicated group ready to bring your vision to life.</p>
-                            <button className="overlayButton" onClick={() => goTo('contact')}>GET IN CONTACT</button>
-                        </div>
+                <div className="mainImageContainer">
+                    <div className="overlayText">
+                        <p>A dedicated group ready to bring your vision to life.</p>
+                        <button className="overlayButton" onClick={() => goTo('contact')}>GET IN CONTACT</button>
                     </div>
-                    <div className="carouselContainer">
-                        <button onClick={prev} className="slideButton left">‹</button>
-                        <div className="teamContainer">
-                            {getVisibleMembers().map((member, index) => (
-                                <div key={index} className="teamMember">
-                                    <img src={member.image} alt={member.name} className="memberImage" />
-                                    <div className="memberInfo">
-                                        <h2>{member.name}</h2>
-                                        <p>{member.role}</p>
-                                        <p>{member.description}</p>
-                                    </div>
+                    <div className='svg-container'>
+                        <img src={downArrow} className='expand-down-img' alt='scroll down arrow' />
+                    </div>
+                </div>
+            </div>
+            <div className="sliderContainer">
+                <div className="carouselContainer">
+                    <button onClick={prev} className="slideButton left">‹</button>
+                    <div className="teamContainer">
+                        {getVisibleMembers().map((member, index) => (
+                            <div key={index} className="teamMember">
+                                <img src={member.image} alt={member.name} className="memberImage" />
+                                <div className="memberInfo">
+                                    <h2>{member.name}</h2>
+                                    <p>{member.role}</p>
+                                    <p>{member.description}</p>
                                 </div>
-                            ))}
-                        </div>
-                        <button onClick={next} className="slideButton right">›</button>
+                            </div>
+                        ))}
                     </div>
+                    <button onClick={next} className="slideButton right">›</button>
                 </div>
             </div>
             <Footer />

@@ -36,9 +36,9 @@ body {
     margin: 10vh auto;
     left: 50%;
     transform: translate(-50%,0);
-    z-index: 15;
+    z-index: 1;
     font-size: 50px;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 .overlayButton {
@@ -62,8 +62,8 @@ body {
 }
 
 .overlayButton:hover {
-    background-color: #B80000;
-    border-color: #B80000;
+    background-color: #CC0000;
+    border-color: #CC0000;
     color: white;
 }
 
@@ -74,6 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 100px 0px;
 }
 
 .slideButton {
