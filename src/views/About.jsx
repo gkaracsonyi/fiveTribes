@@ -6,7 +6,8 @@
 // ==================================================
 
 import { Helmet } from "react-helmet";
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import Header from '../elements/Header.jsx';
 import './about.css'
 import Footer from '../elements/Footer';
@@ -37,7 +38,7 @@ const teamMembers = [
         image: "src/assets/2021/Greg-Fischer.jpg"
     },
     {
-        name: "Chayse McLaughlin",
+        name: "Chayse McLaughlin",  
         role: "Camera Operator and Sound Mixer",
         description: "Chayse graduated from Drexel University with a degree in film and video and has worked on various projects including gripping and sound mixing.",
         image: "src/assets/2021/Chayse-McLaughlin.jpg"
@@ -49,7 +50,10 @@ const teamMembers = [
         image: "src/assets/2021/Paul-Giordano.jpg"
     }
 ];
-/*ADD LITTLE SCROLL ARROW POINTING DOWN SAYING MEET THE TEAM OR SUM SHIT */
+/*ADD LITTLE SCROLL ARROW POINTING DOWN SAYING MEET THE TEAM OR SUM SHIT 
+also add 'meet the team 1.mp4'
+
+*/
 const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const displayCount = 3; // Number of visible members
@@ -70,6 +74,12 @@ const About = () => {
         return visibleMembers;
     };
 
+    const navigate = useNavigate();
+
+    const goTo = (dest = '') => {
+        navigate(`/${dest}`);
+    };
+
     return (
         <>
             <Helmet>
@@ -81,7 +91,7 @@ const About = () => {
                     <div className="mainImageContainer">
                         <div className="overlayText">
                             <p>A dedicated group ready to bring your vision to life.</p>
-                            <button className="overlayButton">GET IN CONTACT</button>
+                            <button className="overlayButton" onClick={() => goTo('contact')}>GET IN CONTACT</button>
                         </div>
                     </div>
                     <div className="carouselContainer">
