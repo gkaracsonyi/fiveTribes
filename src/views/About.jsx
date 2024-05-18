@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Header from '../elements/Header.jsx';
-import './about.css'
+import './about.css';
 import Footer from '../elements/Footer';
 
 import downArrow from '../assets/expand-down.svg';
@@ -52,8 +52,6 @@ const teamMembers = [
         image: "src/assets/2021/Paul-Giordano.jpg"
     }
 ];
-
-// also add 'meet the team 1.mp4'
 
 const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -98,7 +96,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="sliderContainer">
+            <div className="sliderBackground">
+                
                 <div className="carouselContainer">
                     <button onClick={prev} className="slideButton left">‹</button>
                     <div className="teamContainer">
