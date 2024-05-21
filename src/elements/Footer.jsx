@@ -54,7 +54,7 @@ const Footer = () => {
                                 <a href="https://vimeo.com/user75373618" target='_blank'><img src={vimeoLogo} alt="test logo" /></a>
                                 <a href="https://www.youtube.com/channel/UC88pgZsUSQwmHEhMnVzZ62A" target='_blank'><img src={youtubeLogo} alt="test logo" /></a>
                                 <a href="https://www.facebook.com/fivetribesproductions/" target='_blank'><img src={facebookLogo} alt="test logo" /></a>
-                                <a href="https://www.instagram.com/fivetribesproductions"><img src={instagramLogo} alt="test logo" /></a>
+                                <a href="https://www.instagram.com/fivetribesproductions" target='_blank'><img src={instagramLogo} alt="test logo" /></a>
                             </div>
                         </div>
                     </div>
