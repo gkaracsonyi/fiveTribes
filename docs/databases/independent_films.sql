@@ -1,4 +1,5 @@
-CREATE TABLE independent_films (
+CREATE TABLE independent_films 
+    (
         film_id SERIAL PRIMARY KEY,
         title VARCHAR(255) NOT NULL,
         release_date DATE,
@@ -11,7 +12,8 @@ CREATE TABLE independent_films (
         mature_tag BOOLEAN NOT NULL
     );
 
-INSERT INTO independent_films (
+INSERT INTO independent_films
+    (
         title,
         release_date,
         director,
