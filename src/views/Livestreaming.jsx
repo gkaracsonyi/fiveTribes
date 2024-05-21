@@ -5,6 +5,7 @@
 // Updated: April 2024
 // ==================================================
 
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import Header from '../elements/Header.jsx';
@@ -15,7 +16,9 @@ const pageDescription = "Five Tribes Cinema Productions provides live production
 
 const Livestreaming = () => {
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

@@ -5,6 +5,7 @@
 // Updated: May 2024
 // ==================================================
 
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 
@@ -41,6 +42,10 @@ const Home = () => {
     const goTo = (dest) => {
         navigate(`/${dest}`);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

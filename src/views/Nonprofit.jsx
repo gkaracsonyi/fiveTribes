@@ -5,6 +5,7 @@
 // Updated: April 2024
 // ==================================================
 
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import Header from '../elements/Header.jsx';
@@ -13,7 +14,9 @@ import './nonprofit.css';
 
 const Nonprofit = () => {
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

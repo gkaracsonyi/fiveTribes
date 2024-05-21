@@ -38,6 +38,8 @@ const Films = () => {
     const overlayRef = useRef(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+
         // Fetch film gallery from the database
         const fetchFilms = async () => {
             const url = "https://pg.geekay.one/ftcp/independent_films";

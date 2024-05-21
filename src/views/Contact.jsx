@@ -5,6 +5,7 @@
 // Updated: April 2024
 // ==================================================
 
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Header from '../elements/Header.jsx';
 import './contact.css';
@@ -31,6 +32,10 @@ const Contact = () => {
             .then(data => alert(data))
             .catch(error => console.error('Error:', error));
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     return (
         <>

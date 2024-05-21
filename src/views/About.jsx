@@ -6,7 +6,7 @@
 // ==================================================
 
 import { Helmet } from "react-helmet";
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import Header from '../elements/Header.jsx';
 import './about.css';
@@ -78,6 +78,10 @@ const About = () => {
     const goTo = (dest = '') => {
         navigate(`/${dest}`);
     };
+    
+    useEffect (() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

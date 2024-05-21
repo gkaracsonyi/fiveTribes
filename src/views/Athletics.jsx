@@ -6,6 +6,7 @@
 // ==================================================
 
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 import Header from '../elements/Header.jsx';
 
@@ -13,7 +14,9 @@ import './athletics.css';
 
 const Athletics = () => {
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
