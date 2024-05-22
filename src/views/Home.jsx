@@ -63,27 +63,8 @@ const Home = () => {
                 </div>
                 <span className='home--heroGradient'></span>
             </div>
-            {/*
-            <div className='bannerOne'>
-                <img src='src/assets/2019 + misc/womanDeadliftingOne.png'></img>
-                <h1>COMMERCIAL ADVERTISING</h1>
-                <h3>PRODUCTIONS</h3>
-            </div>
-
-            <div className='bannerTwo'>
-                <img src='src/assets/2019 + misc/IMG_2761-1-scaled.jpg'></img>
-                <h1>PROMOTIONAL</h1>
-                <h3>Video Shoots</h3>
-            </div>
-
-            <div className='bannerThree'>
-                <img src='src/assets/2019 + misc/Kerwin-Haze.png'></img>
-                <h1>AWARD WINNING</h1>
-                <h3>Narrative Films</h3>
-            </div>
-            */}
-            <div className='section'>
-                <div className='awardWinning'>
+            <div className='home--section'>
+                <div className='home--sectionText'>
                     <h3>AWARD WINNING</h3>
                     <h1>CINEMA PRODUCTION</h1>
                     <p>{awardWinning_description}</p>
