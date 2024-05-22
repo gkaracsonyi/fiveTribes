@@ -7,12 +7,12 @@ Updated: April 2024
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-.heroContainer {
+.home--heroContainer {
     height: 100vh;
     width: 100vw;
 }
 
-.heroContainer video {
+.home--heroContainer video {
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -26,7 +26,7 @@ Updated: April 2024
 }
 
 
-.svg-container {
+.home--svg-container {
     display: flex;
     position: absolute;
     transform: translate(0vw, 95vh);
@@ -51,7 +51,7 @@ Updated: April 2024
     }
 }
 
-.expand-down-img {
+.home--expand-down-img {
     width: 30px;
     height: auto;
     animation: tidal 2.5s;
@@ -59,7 +59,7 @@ Updated: April 2024
     filter: drop-shadow(0px 0px 4px rgb(0 0 0 / 0.3));
 }
 
-.heroGradient {
+.home--heroGradient {
     position: absolute;
     height: 250px;
     width: 100%;
@@ -68,14 +68,14 @@ Updated: April 2024
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6));
 }
 
-.section {
+.home--section {
     display: flex;
     width: 100%;
     height: 400px;
     margin: 0px;
 }
 
-.awardWinning {
+.home--sectionText {
     color: white;
     width: 50%;
     font-family: "Oswald", sans-serif;
@@ -85,7 +85,7 @@ Updated: April 2024
     margin-left: 40px;
 }
 
-.awardWinning h3 {
+.home--sectionText h3 {
     font-weight: 300;
     letter-spacing: .1em;
     margin: 0;
@@ -93,21 +93,21 @@ Updated: April 2024
     color: #FFFFFF;
 }
 
-.awardWinning h1 {
+.home--sectionText h1 {
     font-weight: 500;
     font-size: 52px;
     margin: 0;
     height: 65px;
 }
 
-.awardWinning p {
+.home--sectionText p {
     color: #CCCCCC;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 40px;
 }
 
-.awardWinning--button {
+.home--sectionText--contactButton {
     background-color: white;
     border-width: 2px;
     border-color: white;
@@ -120,12 +120,12 @@ Updated: April 2024
     transition: ease-in-out .2s;
 }
 
-.awardWinning--button:hover {
+.home--sectionText--contactButton:hover {
     background-color: black;
     color: white;
 }
 
-.sectionMedia {
+.home--sectionMedia {
     top: 0;
     width: 65%;
     height: 100%;
@@ -136,12 +136,12 @@ Updated: April 2024
     display: flex;
 }
 
-.sectionMedia img {
+.home--sectionMedia img {
     width: 100%;
     object-fit: cover;
 }
 
-.sectionMedia--gradient {
+.home--sectionMedia--gradient {
     position: absolute;
     z-index: 3;
     width: 400px;
@@ -159,7 +159,7 @@ Updated: April 2024
     }
 }
 
-.marqueeContainer {
+.home--marqueeContainer {
     margin: 50px auto;
     width: 100%;
     overflow: hidden;
@@ -168,13 +168,13 @@ Updated: April 2024
     user-select: none;
 }
 
-.marquee {
+.home--marquee {
     display: flex;
     white-space: nowrap;
     animation: marqueeAnimation 25s linear infinite;
 }
 
-.marqueeLogo {
+.home--marqueeLogo {
     filter: brightness(0) invert(1);
     width: auto;
     height: 60px;
@@ -182,7 +182,7 @@ Updated: April 2024
     /* Adjust as needed */
 }
 
-.marqueeLogoSpecial {
+.home--marqueeLogoSpecial {
     filter: invert(1);
     width: auto;
     height: 60px;
@@ -190,18 +190,18 @@ Updated: April 2024
     /* Adjust as needed */
 }
 
-.marqueeGradient{
+.home--marqueeGradient{
     width: 150px;
     height: 100%;
     z-index: 3;
     position: absolute;
 }
 
-.mgLeft {
+.home--mgLeft {
     background-image: linear-gradient(to right, rgba(0, 0 , 0, 1), rgba(0, 0, 0, 0));
 }
 
-.mgRight {
+.home--mgRight {
     background-image: linear-gradient(to left, rgba(0, 0 , 0, 1), rgba(0, 0, 0, 0));
     right: 0;
 }
