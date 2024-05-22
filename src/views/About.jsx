@@ -95,8 +95,8 @@ const About = () => {
                         <p>A dedicated group ready to bring your vision to life.</p>
                         <button className="overlayButton" onClick={() => goTo('contact')}>GET IN CONTACT</button>
                     </div>
-                    <div className='svg-container'>
-                        <img src={downArrow} className='expand-down-img' alt='scroll down arrow' />
+                    <div className='about--svg-container'>
+                        <img src={downArrow} className='about--expand-down-img' alt='scroll down arrow' />
                     </div>
                 </div>
             </div>
