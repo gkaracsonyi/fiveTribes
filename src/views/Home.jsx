@@ -105,7 +105,20 @@ const Home = () => {
                     white with a transparent background. This can be achieved using a png and increasing
                     the brighness of the image until everything is white. */}
                 </div>
-                <span className='marqueeGradient mgRight'></span>
+                <span className='home--marqueeGradient home--mgRight'></span>
+            </div>
+            <div className='home--section'>
+                <div className='home--sectionText'>
+                    <h1>PROFESSIONAL GRADE</h1>
+                    <div className='home--sectionText--netCert'>
+                        <img src={netflixLogo} alt="Netflix Logo" />
+                        <p> | Netflix Certified Cameras</p>
+                    </div>
+                </div>
+                <div className='home--sectionMedia'>
+                    <img src="src/assets/2021/69CFEFB4-790B-49BA-9D5C-A62042BD813E-1.jpg" alt="Colin using a Blackmagic cinema camera" />
+                    <span className='home--sectionMedia--gradient'></span>
+                </div>
             </div>
             <Footer />
         </>
