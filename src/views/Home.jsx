@@ -24,6 +24,8 @@ import hfhLogo from '../assets/logos/habitatForHumanityLogoBlack.png'; // Habita
 import jeffersonLogo from '../assets/logos/jeffersonLogoBlack.png'; // Jefferson Health Logo - Client Carousel
 import nbcSportsLogo from '../assets/logos/nbcSportsLogoBlack.png'; // NBC Sports Logo - Client Carousel
 import usRowingLogo from '../assets/logos/usRowingLogoBlack.png'; // US Rowing Logo - Client Carousel
+import amazonLogo from '../assets/logos/amazon-logo.svg';// Amazon Logo - Client Carousel
+import netflixLogo from '../assets/logos/netflix-logo.svg'; // Netflix Logo - Profressional Grade
 
 // VARIABLE TEXT AND REMOTE MEDIA
 // Meta tags (for SEO and bots)
