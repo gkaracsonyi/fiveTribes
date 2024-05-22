@@ -150,6 +150,23 @@ Updated: April 2024
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
+.home--sectionText--netCert {
+    height: 30px;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.home--sectionText--netCert img {
+    height: 30px;
+}
+
+.home--sectionText--netCert p {
+    font-weight: 250;
+    height: 30px;
+    letter-spacing: .1em;
+    margin: 0 0 0 10px;
+}
+
 @keyframes marqueeAnimation {
     0% {
         transform: translateX(0);
