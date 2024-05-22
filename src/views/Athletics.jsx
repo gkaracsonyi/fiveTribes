@@ -25,9 +25,6 @@ const Athletics = () => {
             </Helmet>
             <Header />
 
-            <div className = "penis">
-                <h1>Penis haha</h1>
-            </div>
         </>
     );
 };
