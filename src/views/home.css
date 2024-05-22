@@ -139,6 +139,7 @@ Updated: April 2024
 .home--sectionMedia img {
     width: 100%;
     object-fit: cover;
+    color: white;
 }
 
 .home--sectionMedia--gradient {
