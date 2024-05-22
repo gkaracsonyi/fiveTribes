@@ -56,12 +56,12 @@ const Home = () => {
                 <meta name='description' content={pageDescription} />
             </Helmet>
             <Header />
-            <div className='heroContainer'>
+            <div className='home--heroContainer'>
                 <video src={bannerVideo} autoPlay loop muted preload='true'></video>
-                <div className='svg-container'>
-                    <img src={downArrow} className='expand-down-img' alt='scroll down arrow' />
+                <div className='home--svg-container'>
+                    <img src={downArrow} className='home--expand-down-img' alt='scroll down arrow' />
                 </div>
-                <span className='heroGradient'></span>
+                <span className='home--heroGradient'></span>
             </div>
             {/*
             <div className='bannerOne'>
@@ -87,35 +87,37 @@ const Home = () => {
                     <h3>AWARD WINNING</h3>
                     <h1>CINEMA PRODUCTION</h1>
                     <p>{awardWinning_description}</p>
-                    <button className='awardWinning--button' onClick={() => goTo('contact')}>CONTACT</button>
+                    <button className='home--sectionText--contactButton' onClick={() => goTo('contact')}>CONTACT</button>
                 </div>
-                <div className='sectionMedia'>
-                        <img src="https://i2.wp.com/blog.rememberlenny.com/wp-content/uploads/2020/10/7lAmICy.jpg?fit=1886%2C1258&ssl=1" alt="cinema production using unreal engine" />
-                        <span className='sectionMedia--gradient'></span>
+                <div className='home--sectionMedia'>
+                    <img src="" alt="no source file selected" />
+                    <span className='home--sectionMedia--gradient'></span>
                 </div>
             </div>
-            <div className="marqueeContainer">
-                <span className='marqueeGradient mgLeft'></span>
-                <div className="marquee">
+            <div className="home--marqueeContainer">
+                <span className='home--marqueeGradient home--mgLeft'></span>
+                <div className="home--marquee">
                     {/* Section 1 */}
-                    <img className="marqueeLogoSpecial" src={pennLogo} alt="penn logo" />
-                    <img className="marqueeLogo" src={aramarkLogo} alt="aramark logo" />
-                    <img className="marqueeLogo" src={drexelLogo} alt="drexel logo" />
-                    <img className="marqueeLogo" src={espnLogo} alt="espn logo" />
-                    <img className="marqueeLogo" src={hfhLogo} alt="hfh logo" />
-                    <img className="marqueeLogo" src={jeffersonLogo} alt="jefferson logo" />
-                    <img className="marqueeLogoSpecial" src={nbcSportsLogo} alt="nbc sports logo" />
-                    <img className="marqueeLogo" src={usRowingLogo} alt="us rowing logo" />
+                    <img className="home--marqueeLogoSpecial" src={pennLogo} alt="penn logo" />
+                    <img className="home--marqueeLogo" src={aramarkLogo} alt="aramark logo" />
+                    <img className="home--marqueeLogo" src={drexelLogo} alt="drexel logo" />
+                    <img className="home--marqueeLogo" src={espnLogo} alt="espn logo" />
+                    <img className="home--marqueeLogo" src={hfhLogo} alt="hfh logo" />
+                    <img className="home--marqueeLogo" src={jeffersonLogo} alt="jefferson logo" />
+                    <img className="home--marqueeLogoSpecial" src={nbcSportsLogo} alt="nbc sports logo" />
+                    <img className="home--marqueeLogo" src={usRowingLogo} alt="us rowing logo" />
+                    <img className="home--marqueeLogo" src={amazonLogo} alt="amazon logo" />
 
                     {/* Section 2 - Duplicate content for infinite scrolling */}
-                    <img className="marqueeLogoSpecial" src={pennLogo} alt="penn logo" />
-                    <img className="marqueeLogo" src={aramarkLogo} alt="aramark logo" />
-                    <img className="marqueeLogo" src={drexelLogo} alt="drexel logo" />
-                    <img className="marqueeLogo" src={espnLogo} alt="espn logo" />
-                    <img className="marqueeLogo" src={hfhLogo} alt="hfh logo" />
-                    <img className="marqueeLogo" src={jeffersonLogo} alt="jefferson logo" />
-                    <img className="marqueeLogoSpecial" src={nbcSportsLogo} alt="nbc sports logo" />
-                    <img className="marqueeLogo" src={usRowingLogo} alt="us rowing logo" />
+                    <img className="home--marqueeLogoSpecial" src={pennLogo} alt="penn logo" />
+                    <img className="home--marqueeLogo" src={aramarkLogo} alt="aramark logo" />
+                    <img className="home--marqueeLogo" src={drexelLogo} alt="drexel logo" />
+                    <img className="home--marqueeLogo" src={espnLogo} alt="espn logo" />
+                    <img className="home--marqueeLogo" src={hfhLogo} alt="hfh logo" />
+                    <img className="home--marqueeLogo" src={jeffersonLogo} alt="jefferson logo" />
+                    <img className="home--marqueeLogoSpecial" src={nbcSportsLogo} alt="nbc sports logo" />
+                    <img className="home--marqueeLogo" src={usRowingLogo} alt="us rowing logo" />
+                    <img className="home--marqueeLogo" src={amazonLogo} alt="amazon logo" />
 
                     {/* To add a client logo to the carousel, import the logo as shown above, and add
                     the new logo TWICE (one per section). Make sure that the logo you are importing is
