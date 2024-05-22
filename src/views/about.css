@@ -29,7 +29,8 @@
 .overlayButton {
     border: 3px solid #fff;
     text-transform: uppercase;
-    background-color: rgba(230, 230, 230, 0.3); 
+    background-color: rgba(220, 220, 220, 0.5);
+    backdrop-filter: blur(2px);
     font-weight: bold;
     font-size: 24px;
     padding: 18px 60px;
@@ -43,7 +44,7 @@
     letter-spacing: 0.07em;
     font-weight: 550;
     color: white;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .overlayButton:hover {
