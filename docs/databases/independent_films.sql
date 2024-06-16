@@ -7,7 +7,7 @@ CREATE TABLE independent_films
         description TEXT,
         cover_image TEXT,
         watch_link TEXT,
-        runtime_seconds SMALLINT NOT NULL, -- Assuming no film is over 9 hours long
+        runtime_seconds SMALLINT, -- Assuming no film is over 9 hours long
         language VARCHAR(50),
         mature_tag BOOLEAN NOT NULL
     );
