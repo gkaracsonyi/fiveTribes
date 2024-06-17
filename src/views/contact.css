@@ -1,36 +1,14 @@
-/*
-body {
-    background: url('src/assets/2021/Screen-Shot-2021-01-03-at-9.16.20-AM-1.png') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: auto;
-}
-
-*/
-
-.contactBackground {
-    background: url('src/assets/2021/Screen-Shot-2021-01-03-at-9.16.20-AM-1.png') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 130vh;
-    width: 100vw;
-    overflow: auto;
-    position: absolute;
-    z-index: -1;
+.contact-main {
+    background-color: grey;
 }
 
 /* Ensure the contact form is centered and on top */
 .contact-wrapper {
-    position: relative; /* Ensure the stacking context is setup */
     z-index: 2; /* Higher z-index to overlay on the background */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 100px auto;
+    min-height: 100vh;
 }
 
 .contact-container {
@@ -42,6 +20,7 @@ body {
     max-width: 800px;
     text-align: center;
     border: 1px solid #ccc;
+    margin: 150px auto;
 }
 
 

@@ -165,7 +165,7 @@ const Films = () => {
                                                 ''
                                             )}
                                         </div>
-                                        <p>{formatReleaseYear(selectedFilm.release_date)} - {selectedFilm.runtime_minutes} min</p>
+                                        <p>{formatReleaseYear(selectedFilm.release_date)} - {Math.round(selectedFilm.runtime_seconds / 60)} min</p>
                                         <p>{selectedFilm.description}</p>
                                         <p>Director: {selectedFilm.director}</p>
                                         <p>Language: {selectedFilm.language}</p>
