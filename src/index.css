@@ -5,7 +5,11 @@ Purpose: Master stylesheet for FTCP website
 Updated: April 2024
 ================================================== */
 
+:root {
+    --page-backgroud: rgb(20, 20, 20)
+}
+
 body {
     margin: 0px;
-    background-color: black;
+    background-color: var(--page-backgroud);
 }
